@@ -1,4 +1,4 @@
-# Event Activation Transformer for Text-to-Video Retrieval
+# Event Activation Transformer for Text-Video Retrieval
 
 <a name="depend"/>
 
