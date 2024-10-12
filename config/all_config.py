@@ -52,7 +52,7 @@ class AllConfig(Config):
         parser.add_argument('--num_mha_heads', type=int, default=1, help='Number of parallel heads in multi-headed attention')
         parser.add_argument('--transformer_dropout', type=float, default=0.3, help='Dropout prob. in the transformer pooling')
 
-        # system parameters
+        #  system parameters
         parser.add_argument('--num_workers', type=int, default=4)
         parser.add_argument('--seed', type=int, default=42, help='Random seed')
         parser.add_argument('--no_tensorboard', action='store_true', default=False)
