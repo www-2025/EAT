@@ -182,20 +182,7 @@ class Trainer(BaseTrainer):
                   f"Loss: {total_val_loss}")
             
             res['loss_val'] =  total_val_loss
-            image_path_file = open('/xxx/xxx/result.txt', 'a', encoding='utf-8')
-            image_path_file.write(str(epoch))
-            image_path_file.write(" ")
-            image_path_file.write(str(num_steps))
-            image_path_file.write(" ")
-            image_path_file.write(str(res['R1']))
-            image_path_file.write(" ")
-            image_path_file.write(str(res['R5']))
-            image_path_file.write(" ")
-            image_path_file.write(str(res['R10']))
-            image_path_file.write(" ")
-            image_path_file.write(str(res['MedR']))
-            image_path_file.write("\n")
-            image_path_file.close() 
+            
             if self.writer is not None:
                 for m in res:
                     self.writer.add_scalar(f'val/{m}', res[m], self.global_step)
