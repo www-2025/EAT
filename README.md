@@ -23,7 +23,6 @@ If the `outputs/` folder does not exist, first run `mkdir outputs` to create the
 Also, replace `{videos_dir}` with the path to the dataset's videos.
 
 For evaluation, you can change the `batch_size` without affecting results.
-  
 
 <a name="eval-commands"/>
 
