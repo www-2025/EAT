@@ -13,7 +13,7 @@ try:
     from psutil import cpu_count
 except:
     from multiprocessing import cpu_count
-# multiprocessing.freeze_support()
+
 
 def compress(paras):
     input_video_path, output_video_path = paras
