@@ -18,24 +18,6 @@ class CLIPTransformer(nn.Module):
         config.pooling_type = 'transformer'
         self.pool_frames = Transformer(config)
 
-        #for name, param in self.clip.named_parameters():
-        # top layers always need to train
-         #   if 'ln_final.weight' in name or 'ln_final.bias' in name or 'token_embedding.weight' in name or 'text_projection' in name \
-          #          or 'visual.ln_post.weight' in name or 'visual.ln_post.bias' in name or 'positional_embedding' in name or 'visual_proj' in name \
-           #         or 'logit_scale' in name:
-            #    continue # need to train
-
-            #if 'transformer.gamma' in name or 'transformer.beta' in name:
-               # print('true true........')
-              #  continue
-
-            #param.requires_grad = False
-
-
-       # self.adapter = torch.nn.DataParallel(nn.Linear(feat_dim, feat_dim, bias=False)).cuda()
-
-
-       # self.init_models()
 
     def init_models(self, optimizer=True):
         self.model_optim_params_list = []
