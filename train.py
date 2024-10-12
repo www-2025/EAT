@@ -48,10 +48,9 @@ def main():
         raise NotImplemented
       
     params_optimizer = list(model.named_parameters())
-    #clip_params = [p for n, p in params_optimizer if "clip." in n and "gamma" not in n]
     clip_params = [p for n, p in params_optimizer if "clip." in n]
     noclip_params = [p for n, p in params_optimizer if "clip." not in n]
-    #g_params = [ p for n, p in params_optimizer if "gamma" in n] 
+    g_params = [ p for n, p in params_optimizer if "gamma" in n] 
 
     param_num = 0
     for name, para in model.named_parameters():
