@@ -62,7 +62,6 @@ def main():
             trainer.load_checkpoint("model_best.pth")    
     trainer.validate()
 
-
 if __name__ == '__main__':
     main()
 
