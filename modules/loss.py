@@ -3,7 +3,7 @@ import torch
 import torch.nn.functional as F
 from config.base_config import Config
 
-#EPSILON = sys.float_info.epsilon
+
 
 class CLIPLoss(nn.Module):
     def __init__(self):
